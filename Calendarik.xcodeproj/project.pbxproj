@@ -12,9 +12,12 @@
 		565A827F1E3E69E30091408B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565A827D1E3E69E30091408B /* Main.storyboard */; };
 		565A82811E3E69E30091408B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565A82801E3E69E30091408B /* Assets.xcassets */; };
 		565A82841E3E69E30091408B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565A82821E3E69E30091408B /* LaunchScreen.storyboard */; };
+		C9B582CB242F6912CE86FD3E /* Pods_Calendarik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716CDEA677ADE6D894AB64A5 /* Pods_Calendarik.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25283D774785343C4F9FF291 /* Pods-Calendarik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calendarik.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calendarik/Pods-Calendarik.debug.xcconfig"; sourceTree = "<group>"; };
+		3CAC4D1A288C53A5481C4E0D /* Pods-Calendarik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calendarik.release.xcconfig"; path = "Pods/Target Support Files/Pods-Calendarik/Pods-Calendarik.release.xcconfig"; sourceTree = "<group>"; };
 		565A82761E3E69E30091408B /* Calendarik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendarik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		565A82791E3E69E30091408B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		565A827B1E3E69E30091408B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		565A82801E3E69E30091408B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		565A82831E3E69E30091408B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		565A82851E3E69E30091408B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		716CDEA677ADE6D894AB64A5 /* Pods_Calendarik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calendarik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B582CB242F6912CE86FD3E /* Pods_Calendarik.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BA57767020C5A144DC6838A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25283D774785343C4F9FF291 /* Pods-Calendarik.debug.xcconfig */,
+				3CAC4D1A288C53A5481C4E0D /* Pods-Calendarik.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		565A826D1E3E69E30091408B = {
 			isa = PBXGroup;
 			children = (
 				565A82781E3E69E30091408B /* Calendarik */,
 				565A82771E3E69E30091408B /* Products */,
+				3BA57767020C5A144DC6838A /* Pods */,
+				DF1ACFDEEC5C49866043533A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = Calendarik;
 			sourceTree = "<group>";
 		};
+		DF1ACFDEEC5C49866043533A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				716CDEA677ADE6D894AB64A5 /* Pods_Calendarik.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 565A82881E3E69E30091408B /* Build configuration list for PBXNativeTarget "Calendarik" */;
 			buildPhases = (
+				1F428AADE8577BC266BA905E /* [CP] Check Pods Manifest.lock */,
 				565A82721E3E69E30091408B /* Sources */,
 				565A82731E3E69E30091408B /* Frameworks */,
 				565A82741E3E69E30091408B /* Resources */,
+				D0C466E7DB130B0676C75ADA /* [CP] Embed Pods Frameworks */,
+				ED6ED924CEA41AA6BE387842 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F428AADE8577BC266BA905E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D0C466E7DB130B0676C75ADA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Calendarik/Pods-Calendarik-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED6ED924CEA41AA6BE387842 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Calendarik/Pods-Calendarik-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		565A82721E3E69E30091408B /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		565A82891E3E69E30091408B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25283D774785343C4F9FF291 /* Pods-Calendarik.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E46PUK3P8N;
@@ -270,6 +346,7 @@
 		};
 		565A828A1E3E69E30091408B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CAC4D1A288C53A5481C4E0D /* Pods-Calendarik.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E46PUK3P8N;
