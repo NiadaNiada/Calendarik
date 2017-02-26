@@ -12,6 +12,8 @@
 		565A827F1E3E69E30091408B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565A827D1E3E69E30091408B /* Main.storyboard */; };
 		565A82811E3E69E30091408B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 565A82801E3E69E30091408B /* Assets.xcassets */; };
 		565A82841E3E69E30091408B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 565A82821E3E69E30091408B /* LaunchScreen.storyboard */; };
+		841AF5A81E6366D10056F6B9 /* CellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841AF5A71E6366D10056F6B9 /* CellView.xib */; };
+		841AF5AA1E6366DD0056F6B9 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AF5A91E6366DD0056F6B9 /* CellView.swift */; };
 		C9B582CB242F6912CE86FD3E /* Pods_Calendarik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716CDEA677ADE6D894AB64A5 /* Pods_Calendarik.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		565A82831E3E69E30091408B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		565A82851E3E69E30091408B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		716CDEA677ADE6D894AB64A5 /* Pods_Calendarik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calendarik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		841AF5A71E6366D10056F6B9 /* CellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellView.xib; sourceTree = "<group>"; };
+		841AF5A91E6366DD0056F6B9 /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			children = (
 				565A82791E3E69E30091408B /* AppDelegate.swift */,
 				565A827B1E3E69E30091408B /* ViewController.swift */,
+				841AF5A71E6366D10056F6B9 /* CellView.xib */,
+				841AF5A91E6366DD0056F6B9 /* CellView.swift */,
 				565A827D1E3E69E30091408B /* Main.storyboard */,
 				565A82801E3E69E30091408B /* Assets.xcassets */,
 				565A82821E3E69E30091408B /* LaunchScreen.storyboard */,
@@ -151,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841AF5A81E6366D10056F6B9 /* CellView.xib in Resources */,
 				565A82841E3E69E30091408B /* LaunchScreen.storyboard in Resources */,
 				565A82811E3E69E30091408B /* Assets.xcassets in Resources */,
 				565A827F1E3E69E30091408B /* Main.storyboard in Resources */,
@@ -214,6 +221,7 @@
 			files = (
 				565A827C1E3E69E30091408B /* ViewController.swift in Sources */,
 				565A827A1E3E69E30091408B /* AppDelegate.swift in Sources */,
+				841AF5AA1E6366DD0056F6B9 /* CellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +385,7 @@
 				565A828A1E3E69E30091408B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
